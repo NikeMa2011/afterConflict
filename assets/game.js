@@ -33,14 +33,14 @@ function debug(option) {
         console.error("Auther_define_Error: invalid input, debuginput");
     }
 }
-function printNote() {
-    if(language = "english")  console.log("Notes: \n to change console output, please change variable \"language\" s value, \n such as \"changeLanguage(\"中文\");\", until lastest edition(" + lastestEdition + "), \n available languages: \"english\" and \"中文\";");
-    else if(language = "中文") console.log("帮助: \n 如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值, 比如 \"changeLanguage(\"english\");\", 截止最后的版本(" + lastestEdition + "), 可用的语言为: \"english\" 和 \"中文\";");
+function note() {
+    if(language == "english")  console.log("Notes: \n to change console output, please change variable \"language\" s value, \n such as \"changeLanguage(\"中文\");\", until lastest edition(" + lastestEdition + "), \n available languages: \"english\" and \"中文\";");
+    else if(language == "中文") console.log("帮助: \n 如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值, 比如 \"changeLanguage(\"english\");\", 截止最后的版本(" + lastestEdition + "), 可用的语言为: \"english\" 和 \"中文\";");
 }
 function changeLanguage(option) {
     language = option;
-    localStorage.setItem("langauge", option);
-    if(language == "endlish") console.log("successful change the language, langauge: " + language + "")
+    localStorage.setItem("language", option);
+    if(language == "endlish") console.log("successful change the language, language: " + language + "")
 }
 
 // 监听事件
@@ -82,14 +82,15 @@ function render() {
 }
 
 // 初始化
-if(localStorage.getItem("language") == null) {
-    console.log("Author: NikeMa2011, lastest edition: " + lastestEdition + "\n github profile: https://github.com/NikeMa2011");
-    console.log("Since you have not set or open this website before(localStorage.getItem(\"language\") is \"" + localStorage.getItem("langauge") +"\"), please set the language,");
-    printNote();
-    localStorage.setItem("langauge", null);
+console.log("localStorage.getItem(\"language\") = " + localStorage.getItem("language"));
+console.log("Author: NikeMa2011, lastest edition: " + lastestEdition + "\n github profile: https://github.com/NikeMa2011");
+if(localStorage.getItem("language") == undefined) {
+    console.log("Since you have not set or open this website before(localStorage.getItem(\"language\") is \"" + localStorage.getItem("language") +"\"), please set the language,");
+    localStorage.setItem("language", "english");
 } else {
     language = localStorage.getItem("language");
 }
+note();
 
 reSize();
 
