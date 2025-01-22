@@ -1,5 +1,8 @@
-function invalidInputCout(text) {
+function invalidInputCout() {
     console.log("[Warn]: invalid input;");
+}
+function unSetInputCout() {
+    console.log("[Error]: unset input;");
 }
 // 定义
 const canvas = document.getElementById("canvas");
@@ -27,13 +30,11 @@ function reSize() {
     canvas.width = windowWidth;
 }
 function debug(option) {
-    if(option = undefined) {
+    if(option == undefined) {
         if(debugMode) debugMode = false;
         else debugMode = true;
-    } else if(option == true) {
-
     } else {
-        invalidInputCout();
+        unSetInputCout();
     }
 }
 function variableStatus() {
