@@ -34,15 +34,20 @@ function debug(option) {
     }
 }
 function printNote() {
-    if(language = "english")  console.log("Notes: \n to change console output, please change variable \"language\" s value, \n such as \"language = \"中文\";\", until lastest edition(" + lastestEdition + "), \n available languages: \"english\" and \"中文\";");
-    else if(language = "中文") console.log("帮助: \n 如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值, 比如 \"language = \"english\";\", 截止最后的版本(" + lastestEdition + "), 可用的语言为: \"english\" 和 \"中文\";");
+    if(language = "english")  console.log("Notes: \n to change console output, please change variable \"language\" s value, \n such as \"changeLanguage(\"中文\");\", until lastest edition(" + lastestEdition + "), \n available languages: \"english\" and \"中文\";");
+    else if(language = "中文") console.log("帮助: \n 如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值, 比如 \"changeLanguage(\"english\");\", 截止最后的版本(" + lastestEdition + "), 可用的语言为: \"english\" 和 \"中文\";");
+}
+function changeLanguage(option) {
+    language = option;
+    localStorage.setItem("langauge", option);
+    if(language == "endlish") console.log("successful change the language, langauge: " + language + "")
 }
 
 // 监听事件
 window.onresize = () => {
     reSize();
-    if(language = "endlish") console.log("detect window s size changed: \n windowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
-    else console.log("检测到窗口大小变化: \n windowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
+    if(language == "endlish") console.log("detect window s size changed: \n windowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
+    else if(language == "中文") console.log("检测到窗口大小变化: \n windowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
 };
 window.onmousemove = (event) => {
     mouseX = event.pageX;
@@ -78,8 +83,8 @@ function render() {
 
 // 初始化
 if(localStorage.getItem("language") == null) {
-    console.log("Author: NikeMa2011, lastest edition: " + lastestEdition + "\n github profile: ");
-    console.log("Since you have not set or open this website before(localStorage.getItem(\"language\") is " + localStorage.getItem("langauge") +"), please set the language,");
+    console.log("Author: NikeMa2011, lastest edition: " + lastestEdition + "\n github profile: https://github.com/NikeMa2011");
+    console.log("Since you have not set or open this website before(localStorage.getItem(\"language\") is \"" + localStorage.getItem("langauge") +"\"), please set the language,");
     printNote();
     localStorage.setItem("langauge", null);
 } else {
