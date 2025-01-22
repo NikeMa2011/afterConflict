@@ -35,14 +35,6 @@ function reSize() {
     canvas.height = windowHeight;
     canvas.width = windowWidth;
 }
-function debug(option) {
-    if(option == undefined) {
-        if(debugMode) debugMode = false;
-        else debugMode = true;
-    } else {
-        unSetInputCout();
-    }
-}
 // 控制台输出
 function variableStatus() {
     if(debugMode) {
