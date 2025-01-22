@@ -79,8 +79,11 @@ function render() {
 // 初始化
 if(localStorage.getItem("language") == null) {
     console.log("Author: NikeMa2011, lastest edition: " + lastestEdition + "\n github profile: ");
-    console.log("Since you have not set or open this website before, please set the language,");
-    console.log("Notes: \n to change console output, please change variable \"language\" s value, \n such as \"language = \"中文\";\", until lastest edition(" + lastestEdition + "), \n available options are \"english\" and \"中文\";");
+    console.log("Since you have not set or open this website before(localStorage.getItem(\"language\") is " + localStorage.getItem("langauge") +"), please set the language,");
+    printNote();
+    localStorage.setItem("langauge", null);
+} else {
+    language = localStorage.getItem("language");
 }
 
 reSize();
