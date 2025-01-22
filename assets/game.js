@@ -1,3 +1,6 @@
+function invalidInputCout(text) {
+    console.log("[Warn]: invalid input;");
+}
 // 定义
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -30,7 +33,7 @@ function debug(option) {
     } else if(option == true) {
 
     } else {
-        console.error("Auther_define_Error: invalid input, debuginput");
+        invalidInputCout();
     }
 }
 function variableStatus() {
