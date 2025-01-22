@@ -106,7 +106,7 @@ if(language == "english") console.log("Author: NikeMa2011, edition: " + lastestE
 else if(language == "中文") console.log("作者: NikeMa2011, 版本: " + lastestEdition + "\ngithub链接 : https://github.com/NikeMa2011/RPG");
 
 if(localStorage.getItem("language") == undefined) {
-    console.log("Since you have not set or open this website before(localStorage.getItem(\"language\") is \"" + localStorage.getItem("language") +"\"), please set the language,");
+    console.log("Since you have not set or open this website before(localStorage.getItem(\"language\") is \"" + localStorage.getItem("language") +"\"), please set the language,(now set default: english)");
     localStorage.setItem("language", "english");
 }
 note();
