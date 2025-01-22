@@ -65,14 +65,14 @@ function note() {
 function changeLanguage(option) {
     language = option;
     localStorage.setItem("language", option);
-    if(language == "endlish") console.log("successful change the language, language: " + language);
+    if(language == "english") console.log("successful change the language, language: " + language);
    else  if(language == "中文") console.log("成功的更改了语言: " + language);
 }
 
 // 监听事件
 window.onresize = () => {
     reSize();
-    if(language == "endlish") console.log("detect window s size changed:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
+    if(language == "english") console.log("detect window s size changed:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
     else if(language == "中文") console.log("检测到窗口大小变化:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
 };
 window.onmousemove = (event) => {
