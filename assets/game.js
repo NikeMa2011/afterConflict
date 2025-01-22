@@ -49,10 +49,11 @@ function variableStatus() {
         if(language == "english") console.group("variable values / information:");
         else if(language == "中文") console.group("变量值 / 信息:");
         
-        console.log("localStorage.getItem(\"language\") = " + localStorage.getItem("language") + "\n debugMode: " + debugMode + "\n");
+        console.log("localStorage.getItem(\"language\") = " + localStorage.getItem("language") + "\ndebugMode: " + debugMode + "\n");
 
-        if(language == "english") console.group("Note: only for staric information;");
-        else if(language == "中文") console.group("注意: 仅适用于静态信息");
+        console.groupEnd();
+        if(language == "english") console.log("Note: only for staric information;");
+        else if(language == "中文") console.log("注意: 仅适用于静态信息");
     } else {
         needDebugOnCout();
     }
