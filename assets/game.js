@@ -92,7 +92,6 @@ function render() {
     ctx.fillText(("X: " + positionX + " Y; " + positionY), 30, 40);
     if(debugMode) {
         ctx.fillText((peopleX + ' ' + peopleY + ' ' +peopleWidth + ' ' + peopleHeight), 30, 50);
-        ctx.fillText((peopleX + ' ' + peopleY + ' ' +peopleWidth + ' ' + peopleHeight), 30, 50); 
     }
     ctx.strokeRect(peopleX - (peopleWidth / 2), peopleY - (peopleHeight / 2), peopleWidth, peopleHeight);
     ctx.fillRect(mouseX - (pointerWidth / 2), mouseY - (pointerHeight / 2), pointerWidth, pointerHeight);
