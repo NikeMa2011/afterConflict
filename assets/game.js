@@ -26,6 +26,14 @@ function reSize() {
     canvas.height = windowHeight;
     canvas.width = windowWidth;
 }
+function clacPosition(event) {
+    if(event.key == 'w') positionY ++;
+    else if(event.key == 'a') positionX --;
+    else if(event.key == 's') positionY --;
+    else if(event.key == 'd') positionX ++;
+    showPositionX = Math.trunc(positionX / 10);
+    showPositionY = Math.trunc(positionY / 10);
+}
 // 控制台输出
 function invalidInputCout() {
     if(language == "english") console.log("[Warn]: invalid input;");
@@ -77,14 +85,7 @@ window.onmousemove = (event) => {
     offSetY = windowHeight - mouseY;
     // 简单可靠
 };
-window.onkeydown = (event) => {
-    if(event.key == 'w') positionY ++;
-    else if(event.key == 'a') positionX --;
-    else if(event.key == 's') positionY --;
-    else if(event.key == 'd') positionX ++;
-    showPositionX = Math.trunc(positionX / 10);
-    showPositionY = Math.trunc(positionY / 10);
-}
+window.onkeydown = (event) => clacPosition(event);
 
 // 主要渲染
 function drawPlayersPlatform() {
@@ -126,5 +127,6 @@ if(localStorage.getItem("language") == undefined) {
 note();
 
 reSize();
+clacPosition(window.Event);
 
 setInterval("render()", 25); // 1000 / 25 = 40帧
