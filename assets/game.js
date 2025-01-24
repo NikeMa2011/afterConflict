@@ -103,10 +103,10 @@ function render() {
     ctx.fillRect(0, 0, windowWidth, windowHeight);
 
     ctx.fillStyle = "#ffffff";
-    ctx.fillText(("X: " + showPositionX + " Y; " + showPositionY), 30, 40);
+    ctx.fillText(("X = " + showPositionX + " Y = " + showPositionY), 30, 40);
     if(debugMode) {
         ctx.fillText("debugMode on:", 30, 55);
-        ctx.fillText(("offSets: X = " +offSetX + " Y = " + offSetY), 40, 65);
+        ctx.fillText(("offSets: X = " + offSetX + " Y = " + offSetY), 40, 65);
         ctx.fillText(("playersPlatform: X = " + playersPlatformX + " Y = " + playersPlatformY), 40, 75);
     }
     ctx.fillRect(offSetX - (peopleWidth / 2), offSetY - (peopleHeight / 2), peopleWidth, peopleHeight);
