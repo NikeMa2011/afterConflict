@@ -1,15 +1,3 @@
-function invalidInputCout() {
-    if(language == "english") console.log("[Warn]: invalid input;");
-    else if(language == "中文") console.log("[Warn]: 无效的输入");
-}
-function unSetInputCout() {
-    if(language == "english") console.log("[Error]: unset input;");
-    else if(language == "中文") console.log("[Error]: 未设置输入;");
-}
-function needDebugOnCout() {
-    if(language == "english") console.log("[Error]: ignored, needs \"debugMode\" on(true);");
-    else if(language == "中文") console.log("[Error]: 忽略, 需要 \"debugMode\" 为正(true);");
-}
 // 定义
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -36,6 +24,18 @@ function reSize() {
     canvas.width = windowWidth;
 }
 // 控制台输出
+function invalidInputCout() {
+    if(language == "english") console.log("[Warn]: invalid input;");
+    else if(language == "中文") console.log("[Warn]: 无效的输入");
+}
+function unSetInputCout() {
+    if(language == "english") console.log("[Error]: unset input;");
+    else if(language == "中文") console.log("[Error]: 未设置输入;");
+}
+function needDebugOnCout() {
+    if(language == "english") console.log("[Error]: ignored, needs \"debugMode\" on(true);");
+    else if(language == "中文") console.log("[Error]: 忽略, 需要 \"debugMode\" 为正(true);");
+}
 function variableStatus() {
     if(debugMode) {
         if(language == "english") console.group("variable values / information:");
@@ -79,6 +79,8 @@ window.onkeydown = (event) => {
     else if(event.key == 'a') positionX --;
     else if(event.key == 's') positionY --;
     else if(event.key == 'd') positionX ++;
+    positionX = Math.trunc(positionX / 10);
+    positionY = Math.trunc(positionY / 10);
 }
 
 // 主要渲染
