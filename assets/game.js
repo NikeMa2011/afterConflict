@@ -12,9 +12,9 @@ const lastestEdition = "2025-1-22";
 let debugMode = false;
 let language = "english";
 
-let peopleX, peopleY;
 let mouseX, mouseY;
 let positionX = 0, positionY = 0;
+let offSetX, offSetY;
 
 // 函数
 function reSize() {
@@ -70,8 +70,8 @@ window.onresize = () => {
 window.onmousemove = (event) => {
     mouseX = event.pageX;
     mouseY = event.pageY;
-    peopleX = windowWidth - mouseX;
-    peopleY = windowHeight - mouseY;
+    offSetX = windowWidth - mouseX;
+    offSetY = windowHeight - mouseY;
     // 简单可靠
 };
 window.onkeydown = (event) => {
@@ -93,9 +93,9 @@ function render() {
     ctx.fillStyle = "#ffffff";
     ctx.fillText(("X: " + positionX + " Y; " + positionY), 30, 40);
     if(debugMode) {
-        ctx.fillText((peopleX + ' ' + peopleY + ' ' +peopleWidth + ' ' + peopleHeight), 30, 50);
+        ctx.fillText((offSetX + ' ' + offSetY + ' ' +peopleWidth + ' ' + peopleHeight), 30, 50);
     }
-    ctx.fillRect(peopleX - (peopleWidth / 2), peopleY - (peopleHeight / 2), peopleWidth, peopleHeight);
+    ctx.fillRect(offSetX - (peopleWidth / 2), offSetY - (peopleHeight / 2), peopleWidth, peopleHeight);
     ctx.fillRect(mouseX - (pointerWidth / 2), mouseY - (pointerHeight / 2), pointerWidth, pointerHeight);
     ctx.fillRect(mouseX - (pointerHeight / 2), mouseY - (pointerWidth / 2), pointerHeight, pointerWidth);
 }
