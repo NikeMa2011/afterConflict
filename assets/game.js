@@ -104,8 +104,8 @@ function render() {
     ctx.fillText(("X: " + positionX + " Y; " + positionY), 30, 40);
     if(debugMode) {
         ctx.fillText("debugMode on:", 30, 55);
-        ctx.fillText(("offSets: X" +offSetX + " Y: " + offSetY), 40, 65);
-        ctx.fillText(("playersPlatform: X = " + playersPlatformX + "Y = " + playersPlatformY), 40, 75);
+        ctx.fillText(("offSets: X = " +offSetX + " Y = " + offSetY), 40, 65);
+        ctx.fillText(("playersPlatform: X = " + playersPlatformX + " Y = " + playersPlatformY), 40, 75);
     }
     ctx.fillRect(offSetX - (peopleWidth / 2), offSetY - (peopleHeight / 2), peopleWidth, peopleHeight);
     ctx.fillRect(mouseX - (pointerWidth / 2), mouseY - (pointerHeight / 2), pointerWidth, pointerHeight);
