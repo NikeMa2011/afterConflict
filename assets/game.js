@@ -20,7 +20,7 @@ let playersPlatformX, playersPlatformY;
 let offSetX, offSetY;
 
 // 函数
-function reSize() {
+function calcSize() {
     windowHeight = window.innerHeight - 6;
     windowWidth = window.innerWidth - 6;
     canvas.height = windowHeight;
@@ -74,7 +74,7 @@ function changeLanguage(option) {
 
 // 监听事件
 window.onresize = () => {
-    reSize();
+    calcSize();
     if(language == "english") console.log("detect window s size changed:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
     else if(language == "中文") console.log("检测到窗口大小变化:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
 };
@@ -126,7 +126,7 @@ if(localStorage.getItem("language") == undefined) {
 }
 note();
 
-reSize();
+calcSize();
 clacPosition(window.Event);
 
 setInterval("render()", 25); // 1000 / 25 = 40帧
