@@ -15,6 +15,7 @@ let language = "english";
 
 let mouseX, mouseY;
 let positionX = 0, positionY = 0;
+let showPositionX, showPositionY;
 let playersPlatformX, playersPlatformY;
 let offSetX, offSetY;
 
@@ -81,8 +82,8 @@ window.onkeydown = (event) => {
     else if(event.key == 'a') positionX --;
     else if(event.key == 's') positionY --;
     else if(event.key == 'd') positionX ++;
-    positionX = Math.trunc(positionX / 10);
-    positionY = Math.trunc(positionY / 10);
+    showPositionX = Math.trunc(positionX / 10);
+    showPositionY = Math.trunc(positionY / 10);
 }
 
 // 主要渲染
@@ -101,7 +102,7 @@ function render() {
     ctx.fillRect(0, 0, windowWidth, windowHeight);
 
     ctx.fillStyle = "#ffffff";
-    ctx.fillText(("X: " + positionX + " Y; " + positionY), 30, 40);
+    ctx.fillText(("X: " + showPositionX + " Y; " + showPositionY), 30, 40);
     if(debugMode) {
         ctx.fillText("debugMode on:", 30, 55);
         ctx.fillText(("offSets: X = " +offSetX + " Y = " + offSetY), 40, 65);
