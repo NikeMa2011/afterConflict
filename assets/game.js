@@ -7,6 +7,7 @@ ctx.font = "48px serif";
 let windowHeight, windowWidth;
 const pointerHeight = 30, pointerWidth = 4;
 const peopleHeight = 100, peopleWidth = 50;
+const playersPlatformHeight = 500, playersPlatformWifth = 500;
 
 const lastestEdition = "2025-1-22";
 let debugMode = false;
@@ -14,6 +15,7 @@ let language = "english";
 
 let mouseX, mouseY;
 let positionX = 0, positionY = 0;
+let playersPlatformX, playersPlatformY;
 let offSetX, offSetY;
 
 // 函数
@@ -84,6 +86,14 @@ window.onkeydown = (event) => {
 }
 
 // 主要渲染
+function drawPlayersPlatform() {
+    if(positionX + playersPlatformWifth > windowWidth || positionY + playersPlatformHeight > windowHeight) {
+        playersPlatformX = positionX + offSetX - (playersPlatformHeight);
+        playersPlatformY = positionY + offSetY - (playersPlatformWifth);
+        ctx.fillStyle = "#6d6d20";
+        ctx.strokeRect(playersPlatformX, playersPlatformY, playersPlatformHeight, playersPlatformWifth);
+    }
+}
 function render() {
     ctx.clearRect(0, 0, windowWidth, windowHeight);
 
@@ -95,6 +105,7 @@ function render() {
     if(debugMode) {
         ctx.fillText("debugMode on:", 30, 55);
         ctx.fillText(("offSets: X" +offSetX + " Y: " + offSetY), 40, 65);
+        ctx.fillText(("playersPlatform: X = " + playersPlatformX + "Y = " + playersPlatformY), 40, 75);
     }
     ctx.fillRect(offSetX - (peopleWidth / 2), offSetY - (peopleHeight / 2), peopleWidth, peopleHeight);
     ctx.fillRect(mouseX - (pointerWidth / 2), mouseY - (pointerHeight / 2), pointerWidth, pointerHeight);
