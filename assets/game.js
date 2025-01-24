@@ -16,7 +16,7 @@ let language = "english";
 let mouseX, mouseY;
 let positionX = 0, positionY = 0;
 let showPositionX, showPositionY;
-let playersPlatformX, playersPlatformY;
+let playersPlatformX = 0, playersPlatformY = 0;
 let offSetX, offSetY;
 
 // 函数
@@ -89,11 +89,11 @@ window.onkeydown = (event) => clacPosition(event);
 
 // 主要渲染
 function drawPlayersPlatform() {
-    if(positionX + playersPlatformWifth > windowWidth || positionY + playersPlatformHeight > windowHeight) {
-        playersPlatformX = positionX + offSetX - (playersPlatformHeight);
-        playersPlatformY = positionY + offSetY - (playersPlatformWifth);
+    playersPlatformX = positionX + offSetX - playersPlatformWifth;
+    playersPlatformY = positionY + offSetY - playersPlatformHeight;
+    if(playersPlatformX < windowWidth || playersPlatformY < windowHeight) {
         ctx.fillStyle = "#6d6d20";
-        ctx.strokeRect(playersPlatformX, playersPlatformY, playersPlatformHeight, playersPlatformWifth);
+        ctx.fillRect(playersPlatformX, playersPlatformY, playersPlatformHeight, playersPlatformWifth);
     }
 }
 function render() {
@@ -102,6 +102,8 @@ function render() {
     ctx.fillStyle = "#123456";
     ctx.fillRect(0, 0, windowWidth, windowHeight);
 
+    drawPlayersPlatform();
+    
     ctx.fillStyle = "#ffffff";
     ctx.fillText(("X = " + showPositionX + " Y = " + showPositionY), 30, 40);
     if(debugMode) {
