@@ -31,8 +31,8 @@ function clacPosition(event) {
     else if(event.key == 'a') positionX --;
     else if(event.key == 's') positionY --;
     else if(event.key == 'd') positionX ++;
-    showPositionX = Math.trunc(positionX / 10);
-    showPositionY = Math.trunc(positionY / 10);
+    showPositionX = Math.trunc(positionX / 5);
+    showPositionY = Math.trunc(positionY / 5);
 }
 // 控制台输出
 function invalidInputCout() {
