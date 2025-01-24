@@ -15,6 +15,7 @@ let language = "english";
 let peopleX, peopleY;
 let mouseX, mouseY;
 let positionX = 0, positionY = 0;
+let offsetX = 0, offsetY = 0;
 
 // 函数
 function reSize() {
