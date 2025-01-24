@@ -95,7 +95,7 @@ function render() {
     if(debugMode) {
         ctx.fillText((peopleX + ' ' + peopleY + ' ' +peopleWidth + ' ' + peopleHeight), 30, 50);
     }
-    ctx.strokeRect(peopleX - (peopleWidth / 2), peopleY - (peopleHeight / 2), peopleWidth, peopleHeight);
+    ctx.fillRect(peopleX - (peopleWidth / 2), peopleY - (peopleHeight / 2), peopleWidth, peopleHeight);
     ctx.fillRect(mouseX - (pointerWidth / 2), mouseY - (pointerHeight / 2), pointerWidth, pointerHeight);
     ctx.fillRect(mouseX - (pointerHeight / 2), mouseY - (pointerWidth / 2), pointerHeight, pointerWidth);
 }
@@ -114,4 +114,4 @@ note();
 
 reSize();
 
-setInterval("render()", 20);
+setInterval("render()", 25); // 1000 / 25 = 40帧
