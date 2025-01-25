@@ -21,8 +21,8 @@ let offSetX, offSetY;
 
 // 函数
 function calcSize() {
-    windowHeight = window.innerHeight - 6;
-    windowWidth = window.innerWidth - 6;
+    windowHeight = window.innerHeight;
+    windowWidth = window.innerWidth;
     canvas.height = windowHeight;
     canvas.width = windowWidth;
 }
@@ -75,8 +75,8 @@ function changeLanguage(option) {
 // 监听事件
 window.onresize = () => {
     calcSize();
-    if(language == "english") console.log("detect window s size changed:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
-    else if(language == "中文") console.log("检测到窗口大小变化:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth + " (-5)");
+    if(language == "english") console.log("detect window s size changed:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth);
+    else if(language == "中文") console.log("检测到窗口大小变化:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth);
 };
 window.onmousemove = (event) => {
     mouseX = event.pageX;
