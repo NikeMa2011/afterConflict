@@ -89,8 +89,8 @@ window.onkeydown = (event) => clacPosition(event);
 
 // 主要渲染
 function drawPlayersPlatform() {
-    playersPlatformX = positionX + offSetX - playersPlatformWifth;
-    playersPlatformY = positionY + offSetY - playersPlatformHeight;
+    playersPlatformX = positionX + offSetX - (playersPlatformWifth / 2);
+    playersPlatformY = positionY + offSetY - (playersPlatformHeight / 2);
     if(playersPlatformX < windowWidth || playersPlatformY < windowHeight) {
         ctx.fillStyle = "#6d6d20";
         ctx.fillRect(playersPlatformX, playersPlatformY, playersPlatformHeight, playersPlatformWifth);
