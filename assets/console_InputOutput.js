@@ -24,6 +24,10 @@ function needDebugOnCout() {
     if(language == "english") console.log("[Error]: ignored, needs \"debugMode\" on(true);");
     else if(language == "中文") console.log("[Error]: 忽略, 需要 \"debugMode\" 为正(true);");
 }
+function pressKeyCout(key) {
+    if(language == "english") console.log("key press: " + key);
+    else if(language == "中文") console.log("按下的键; " + key);
+}
 function variableStatus() {
     if(debugMode) {
         if(language == "english") console.group("variable values / information:");

@@ -58,6 +58,7 @@ window.onmousemove = (event) => {
     // 简单可靠
 };
 window.onkeydown = (event) => {
+    if(debugMode) pressKeyCout(event.key);
     if(event.key == 'w','a','s','d') clacPosition(event);
     else if(event.key == 'e') inventory();
 }
