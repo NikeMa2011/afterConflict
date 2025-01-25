@@ -27,12 +27,12 @@ function calcSize() {
     canvas.width = windowWidth;
 }
 function clacPosition(event) {
-    if(event.key == 'w') positionY ++;
-    else if(event.key == 'a') positionX --;
-    else if(event.key == 's') positionY --;
-    else if(event.key == 'd') positionX ++;
-    showPositionX = Math.trunc(positionX / 5);
-    showPositionY = Math.trunc(positionY / 5);
+    if(event.key == 'w') positionY += 8;
+    else if(event.key == 'a') positionX += 8;
+    else if(event.key == 's') positionY -= 8;
+    else if(event.key == 'd') positionX -= 8;
+    showPositionX = Math.trunc(positionX / 10);
+    showPositionY = Math.trunc(positionY / 10);
 }
 // 控制台输出
 function invalidInputCout() {
