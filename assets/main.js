@@ -55,7 +55,6 @@ window.onmousemove = (event) => {
     mouseY = event.pageY;
     offSetX = windowWidth - mouseX;
     offSetY = windowHeight - mouseY;
-    // 简单可靠
 };
 window.onkeydown = (event) => {
     if(debugMode) pressKeyCout(event.key);
