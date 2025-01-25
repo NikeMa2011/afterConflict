@@ -19,6 +19,8 @@ let showPositionX, showPositionY;
 let playersPlatformX = 0, playersPlatformY = 0;
 let offSetX, offSetY;
 
+let inventoryOpen = false;
+
 // 函数
 function calcSize() {
     windowHeight = window.innerHeight;
@@ -34,6 +36,14 @@ function clacPosition(event) {
     showPositionX = Math.trunc(positionX / 10);
     showPositionY = Math.trunc(positionY / 10);
 }
+function inventory() {
+    if(!inventoryOpen) {
+        inventoryOpen = true;
+    } else {
+        inventoryOpen = false;
+    }
+    inventoryOpenCout();
+}
 
 // 监听事件
 window.onresize = () => {
@@ -47,7 +57,10 @@ window.onmousemove = (event) => {
     offSetY = windowHeight - mouseY;
     // 简单可靠
 };
-window.onkeydown = (event) => clacPosition(event);
+window.onkeydown = (event) => {
+    if(event.key == 'w','a','s','d') clacPosition(event);
+    else if(event.key == 'e') inventory();
+}
 
 // 主要渲染
 function drawPlayersPlatform() {
@@ -59,6 +72,7 @@ function drawPlayersPlatform() {
     }
 }
 function render() {
+    if(!inventoryOpen) {
     ctx.clearRect(0, 0, windowWidth, windowHeight);
 
     ctx.fillStyle = "#123456";
@@ -76,6 +90,7 @@ function render() {
     ctx.fillRect(offSetX - (peopleWidth / 2), offSetY - (peopleHeight / 2), peopleWidth, peopleHeight);
     ctx.fillRect(mouseX - (pointerWidth / 2), mouseY - (pointerHeight / 2), pointerWidth, pointerHeight);
     ctx.fillRect(mouseX - (pointerHeight / 2), mouseY - (pointerWidth / 2), pointerHeight, pointerWidth);
+    }
 }
 
 calcSize();

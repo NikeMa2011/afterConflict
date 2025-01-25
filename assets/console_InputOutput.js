@@ -1,4 +1,13 @@
 // 控制台输出
+function inventoryOpenCout() {
+    if(!inventoryOpen) {
+        if(language == "english") console.log("inventory open");
+        else if(language == "中文") console.log("打开物品框");
+    } else {
+        if(language == "english") console.log("inventory close");
+        else if(language == "中文") console.log("关闭物品框");
+    }
+}
 function reSizeCout() {
     if(language == "english") console.log("detect window s size changed:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth);
     else if(language == "中文") console.log("检测到窗口大小变化:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth);
