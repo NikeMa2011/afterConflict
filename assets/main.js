@@ -32,12 +32,12 @@ function calcSize() {
     canvas.width = windowWidth;
 }
 function clacPosition(event) {
-    if(event.key == 'w') positionY += 8;
-    else if(event.key == 'a') positionX += 8;
-    else if(event.key == 's') positionY -= 8;
-    else if(event.key == 'd') positionX -= 8;
-    showPositionX = Math.trunc(positionX / 10);
-    showPositionY = Math.trunc(positionY / 10);
+    if(event.key == 'w') positionY += 10;
+    else if(event.key == 's') positionY -= 10;
+    else if(event.key == 'a') positionX += 10;
+    else if(event.key == 'd') positionX -= 10;
+    showPositionX = Math.trunc(positionX / 20);
+    showPositionY = Math.trunc(positionY / 20);
 }
 function inventory() {
     if(!inventoryOpen) {
