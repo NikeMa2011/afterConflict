@@ -21,6 +21,9 @@ let offSetX, offSetY;
 
 let inventoryOpen = false;
 
+let health = 50, maxiumHealth = 50;
+let energy = 30, maxiumEnergy = 30;
+
 // 函数
 function calcSize() {
     windowHeight = window.innerHeight;
@@ -70,6 +73,10 @@ function drawPlayersPlatform() {
         ctx.fillStyle = "#6d6d20";
         ctx.fillRect(playersPlatformX, playersPlatformY, playersPlatformHeight, playersPlatformWifth);
     }
+}
+function drawInfomationUI() {
+    ctx.strokeStyle = "#ffffff";
+    ctx.strokeRect(30);
 }
 function render() {
     if(!inventoryOpen) {
