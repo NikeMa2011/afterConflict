@@ -14,15 +14,15 @@ function reSizeCout() {
 }
 function invalidInputCout() {
     if(language == "english") console.log("[Warn]: invalid input;");
-    else if(language == "中文") console.log("[Warn]: 无效的输入");
+    else if(language == "中文") console.log("[警告]: 无效的输入");
 }
 function unSetInputCout() {
     if(language == "english") console.log("[Error]: unset input;");
-    else if(language == "中文") console.log("[Error]: 未设置输入;");
+    else if(language == "中文") console.log("[错误]: 未设置输入;");
 }
 function needDebugOnCout() {
     if(language == "english") console.log("[Error]: ignored, needs \"debugMode\" on(true);");
-    else if(language == "中文") console.log("[Error]: 忽略, 需要 \"debugMode\" 为正(true);");
+    else if(language == "中文") console.log("[错误]: 忽略, 需要 \"debugMode\" 为正(true);");
 }
 function pressKeyCout(key) {
     if(language == "english") console.log("key press: " + key);
