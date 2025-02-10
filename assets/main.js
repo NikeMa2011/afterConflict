@@ -54,7 +54,7 @@ window.onresize = () => {
     reSizeCout();
 };
 window.onmousemove = (event) => {
-    mouseX = event.pageX;
+    mouseX = event.pageX;       
     mouseY = event.pageY;
     offSetX = windowWidth - mouseX;
     offSetY = windowHeight - mouseY;
@@ -65,11 +65,11 @@ window.onkeydown = (event) => {
     else if(event.key == 'e') inventory();
 }
 
-// 主要渲染
+// 渲染
 function drawPlayersPlatform() {
     playersPlatformX = positionX + offSetX - (playersPlatformWifth / 2);
     playersPlatformY = positionY + offSetY - (playersPlatformHeight / 2);
-    if(playersPlatformX < windowWidth || playersPlatformY < windowHeight) {
+    if(playersPlatformX < windowWidth || playersPlatformY < windowHeight) { 
         ctx.fillStyle = "#6d6d20";
         ctx.fillRect(playersPlatformX, playersPlatformY, playersPlatformHeight, playersPlatformWifth);
     }
@@ -78,7 +78,7 @@ function drawInfomationUI() {
     ctx.strokeStyle = "#ffffff";
     ctx.strokeRect(30);
 }
-function render() {
+function render() {//主要执行的渲染函数
     if(!inventoryOpen) {
     ctx.clearRect(0, 0, windowWidth, windowHeight);
 
@@ -101,6 +101,7 @@ function render() {
     ctx.fillRect(mouseX - (pointerHeight / 2), mouseY - (pointerWidth / 2), pointerHeight, pointerWidth);
     }
 }
+// 初始化
 
 calcSize();
 clacPosition(window.Event);
