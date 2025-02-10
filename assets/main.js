@@ -23,6 +23,8 @@ let inventoryOpen = false;
 
 let health = 50, maxiumHealth = 50;
 let energy = 30, maxiumEnergy = 30;
+let weight = 0, maxiumWeight = 30;
+let moveDistance, maxiumMoveSpeed = 10;
 
 // 控制台输出
 function inventoryOpenCout() {
@@ -87,10 +89,11 @@ function calcSize() {
     canvas.width = windowWidth;
 }
 function clacPosition(event) {
-    if(event.key == 'w') positionY += 10;
-    else if(event.key == 's') positionY -= 10;
-    else if(event.key == 'a') positionX += 10;
-    else if(event.key == 'd') positionX -= 10;
+    moveDistance = Math.trunc(maxiumMoveSpeed - (weight / maxiumWeight * 100));
+    if(event.key == 'w') positionY += moveDistance;
+    else if(event.key == 's') positionY -= moveDistance;
+    else if(event.key == 'a') positionX += moveDistance;
+    else if(event.key == 'd') positionX -= moveDistance;
     showPositionX = Math.trunc(positionX / 20);
     showPositionY = Math.trunc(positionY / 20);
 }
