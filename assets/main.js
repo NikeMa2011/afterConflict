@@ -112,7 +112,7 @@ window.onresize = () => {
     reSizeCout();
 };
 window.onmousemove = (event) => {
-    mouseX = event.pageX;       
+    mouseX = event.pageX;
     mouseY = event.pageY;
     offSetX = windowWidth - mouseX;
     offSetY = windowHeight - mouseY;
