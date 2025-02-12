@@ -148,9 +148,11 @@ function render() {//主要执行的渲染函数
     ctx.fillStyle = "#ffffff";
     if(debugMode) {
         ctx.fillText(("showPisitionX = " + showPositionX + " showPositionY = " + showPositionY), 30, 40);
-        ctx.fillText("debugMode on:", 30, 55);
-        ctx.fillText(("offSets: X = " + offSetX + " Y = " + offSetY), 40, 65);
-        ctx.fillText(("playersPlatform: X = " + playersPlatformX + " Y = " + playersPlatformY), 40, 75);
+        ctx.fillText("Tips: Position is calculated by devide 20, and every step (no weight) is move 10 pixels", 30, 50);
+        ctx.fillText(("(in pixels) positionX = " + positionX + " position Y = " + positionY), 30, 60);
+        ctx.fillText("debugMode on:", 30, 75);
+        ctx.fillText(("offSets: X = " + offSetX + " Y = " + offSetY), 40, 85);
+        ctx.fillText(("playersPlatform: X = " + playersPlatformX + " Y = " + playersPlatformY), 40, 95);
     } else {
         ctx.fillText(("X = " + showPositionX + " Y = " + showPositionY), 30, 40);
     }
