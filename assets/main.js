@@ -1,5 +1,5 @@
 // 定义
-const title = document.getElementById("websiteTitle");
+const title = document.getElementById("title");
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
