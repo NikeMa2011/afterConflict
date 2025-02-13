@@ -29,7 +29,7 @@ let moveDistance, maxiumMoveSpeed = 10;
 
 // 控制台输出
 function inventoryOpenCout() {
-    if(!inventoryOpen) {
+    if(inventoryOpen) {
         if(language == "english") console.log("inventory open");
         else if(language == "中文") console.log("打开物品框");
     } else {
@@ -101,10 +101,11 @@ function clacPosition(event) {
 function inventory() {
     if(!inventoryOpen) {
         inventoryOpen = true;
-    } else {
+    } else if(inventoryOpen) {
         inventoryOpen = false;
     }
-    inventoryOpenCout();
+    if(debugMode) inventoryOpenCout();
+    console.log(90);
 }
 
 // 监听事件
@@ -119,10 +120,16 @@ window.onmousemove = (event) => {
     offSetY = windowHeight - mouseY;
 };
 window.onkeydown = (event) => {
-    if(debugMode) pressKeyCout(event.key);
-    if(event.key == 'w','a','s','d') clacPosition(event);
-    else if(event.key == 'e') inventory();
+    if (debugMode) pressKeyCout(event.key);
+    
+    const moveKeys = ['w', 'a', 's', 'd'];
+    if (moveKeys.includes(event.key)) {
+        clacPosition(event);
+    } else if (event.key === 'e') {
+        inventory();
+    }
 }
+
 
 // 渲染
 function drawPlayersPlatform() {
