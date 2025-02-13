@@ -60,7 +60,7 @@ function pressKeyCout(key) {
 function variableStatus() {
     if(debugMode) {
         if(language == "english") console.group("variable values / information:");
-        else if(language == "中文") console.group("变量值 / 信息:");    
+        else if(language == "中文") console.group("变量值 / 信息:");
 
         console.log("localStorage.getItem(\"language\") = " + localStorage.getItem("language") + "\ndebugMode: " + debugMode + "\n");
 
