@@ -105,7 +105,6 @@ function inventory() {
         inventoryOpen = false;
     }
     if(debugMode) inventoryOpenCout();
-    console.log(90);
 }
 
 // 监听事件
