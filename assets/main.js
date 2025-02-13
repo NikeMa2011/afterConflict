@@ -60,7 +60,7 @@ function pressKeyCout(key) {
 function variableStatus() {
     if(debugMode) {
         if(language == "english") console.group("variable values / information:");
-        else if(language == "中文") console.group("变量值 / 信息:");
+        else if(language == "中文") console.group("变量值 / 信息:");    
 
         console.log("localStorage.getItem(\"language\") = " + localStorage.getItem("language") + "\ndebugMode: " + debugMode + "\n");
 
@@ -89,7 +89,7 @@ function calcSize() {
     canvas.height = windowHeight;
     canvas.width = windowWidth;
 }
-function clacPosition(event) {
+function calcPosition(event) {
     moveDistance = Math.trunc(maxiumMoveSpeed - (weight / maxiumWeight * 100));
     if(event.key == 'w') positionY += moveDistance;
     else if(event.key == 's') positionY -= moveDistance;
@@ -123,7 +123,7 @@ window.onkeydown = (event) => {
     
     const moveKeys = ['w', 'a', 's', 'd'];
     if (moveKeys.includes(event.key)) {
-        clacPosition(event);
+        calcPosition(event);
     } else if (event.key === 'e') {
         inventory();
     }
@@ -188,6 +188,6 @@ else if(language == "中文") {
 note();
 
 calcSize();
-clacPosition(window.Event);
+calcPosition(window.Event);
 
 setInterval("render()", 25); // 1000 / 25 = 40帧
