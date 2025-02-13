@@ -62,7 +62,8 @@ function variableStatus() {
         if(language == "english") console.group("variable values / information:");
         else if(language == "中文") console.group("变量值 / 信息:");
 
-        console.log("localStorage.getItem(\"language\") = " + localStorage.getItem("language") + "\ndebugMode: " + debugMode + "\n");
+        console.log("localStorage.getItem(\"language\") = " + localStorage.getItem("language"));
+        console.log(";debugMode: " + debugMode + "\n");
 
         console.groupEnd();
         if(language == "english") console.log("Note: only for staric information;");
