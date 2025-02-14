@@ -32,6 +32,16 @@ class items {
     }
 }
 
+class allItems {
+    constructor() {
+        this.items = {};
+    }
+    addItems(item) {
+        this.items[item.name] = item
+    }
+
+}
+
 let health = 50, maxiumHealth = 50;
 let energy = 30, maxiumEnergy = 30;
 let weight = 0, maxiumWeight = 30;
