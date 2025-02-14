@@ -22,6 +22,16 @@ let offSetX, offSetY;
 
 let inventoryOpen = false;
 
+class items {
+    constructor(ID, name, description, rarity, category) {
+        this.ID = ID;
+        this.name = name;
+        this.description = description;
+        this.rarity = rarity;
+        this.category = category;
+    }
+}
+
 let health = 50, maxiumHealth = 50;
 let energy = 30, maxiumEnergy = 30;
 let weight = 0, maxiumWeight = 30;
