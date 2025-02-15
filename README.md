@@ -9,5 +9,3 @@
 a website little RPG game which is based on canvas tag draw, original JS to write logic and rules, didnt used any third-party code.
 
 > notes: this project has all developed by NikeMa2011, if you find any questions please send to this email address: <huz193@outlook.com>
-
-// MineCraft Jvav / BadRock Edition now is 35% percent off! End in " 03 days 07 hours 28 minutes 06 seconds";(唔...)
