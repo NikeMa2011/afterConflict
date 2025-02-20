@@ -22,25 +22,23 @@ let offSetX, offSetY;
 
 let inventoryOpen = false;
 
-class items {
-    constructor(ID, name, description, rarity, category) {
+// 类
+class weapons {
+    constructor(ID, name, discription, reloadSpeed, fireSpeed, maxiumAmmo, ammo, weight, damage, penetrate) {
         this.ID = ID;
         this.name = name;
-        this.description = description;
-        this.rarity = rarity;
-        this.category = category;
+        this.discription = discription;
+        this.reloadSpeed = reloadSpeed;
+        this.fireSpeed = fireSpeed;
+        this.maxiumAmmo = maxiumAmmo;
+        this.ammo = ammo;
+        this.weight = weight;
+        this.damage = damage;
+        this.penetrate = penetrate;
     }
 }
-
-class allItems {
-    constructor() {
-        this.items = {};
-    }
-    addItems(item) {
-        this.items[item.name] = item
-    }
-
-}
+// 定义物品
+const glock_18 = new weapons("weapon_pistols_glock_18", "glock_18", )
 
 let health = 50, maxiumHealth = 50;
 let energy = 30, maxiumEnergy = 30;
