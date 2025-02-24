@@ -1,9 +1,13 @@
-// 类
-class weapons {
-    constructor(ID, name, discription, reloadSpeed, fireSpeed, maxiumAmmo, ammo, weight, damage, penetrate) {
+// 
+class defalut {
+    constructor(ID, name, discription) {
         this.ID = ID;
         this.name = name;
         this.discription = discription;
+    }
+}
+class weapons extends defalut{
+    constructor(reloadSpeed, fireSpeed, maxiumAmmo, ammo, weight, damage, penetrate) {
         this.reloadSpeed = reloadSpeed;
         this.fireSpeed = fireSpeed;
         this.maxiumAmmo = maxiumAmmo;
@@ -15,4 +19,4 @@ class weapons {
 }
 
 // 定义物品
-const glock_18 = new weapons("weapon_pistols_glock_18", "glock_18", )
+const glock_18 = new weapons("weapon_pistols_glock_18", "glock_18",);
