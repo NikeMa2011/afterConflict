@@ -1,4 +1,3 @@
-// 
 class defalut {
     constructor(ID, name, discription) {
         this.ID = ID;
