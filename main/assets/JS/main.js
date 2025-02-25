@@ -10,7 +10,7 @@ const pointerHeight = 30, pointerWidth = 4;
 const peopleHeight = 100, peopleWidth = 50;
 const playersPlatformHeight = 500, playersPlatformWifth = 500;
 
-const lastestEdition = "2025-2-10";
+const lastestEdition = "0.1.2Beta";
 let debugMode = false;
 let language = "english";
 
