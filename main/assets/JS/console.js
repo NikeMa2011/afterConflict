@@ -14,7 +14,7 @@ function reSizeCout() {
 }
 function invalidInputCout() {
     if(language == "english") console.log("[Warn]: invalid input;");
-    else if(language == "中文") console.log("[警告]: 无效的输入");
+    else if(language == "中文") console.log("[警告]: 未设置输入");
 }
 function unSetInputCout() {
     if(language == "english") console.log("[Error]: unset input;");
