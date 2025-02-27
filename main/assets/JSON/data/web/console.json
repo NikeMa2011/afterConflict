@@ -13,6 +13,10 @@
             "context": {
                 "reSize": "detect window s size changed",
                 "keyPress": "key pressed",
+                "window": {
+                    "height": "window s height",
+                    "width": "window s width"
+                },
                 "status": {
                     "title": "variable values / information",
                     "langauge": "language",
@@ -36,6 +40,10 @@
             "context": {
                 "reSize": "检测到窗口大小变化",
                 "keyPress": "按下的键",
+                "window": {
+                    "height": "窗口的高度",
+                    "width": "窗口的宽度"
+                },
                 "status": {
                     "title": "变量值 / 信息",
                     "langauge": "游戏语言",
