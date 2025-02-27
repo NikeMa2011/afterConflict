@@ -15,7 +15,7 @@
                 "keyPress": "key pressed",
                 "status": {
                     "title": "variable values / information",
-                    "langauge": "language: localStorage.getItem(\"language\")",
+                    "langauge": "language",
                     "debugMode": "debugMode",
                     "note": "Note: only for staric information"
                 },
@@ -38,7 +38,7 @@
                 "keyPress": "按下的键",
                 "status": {
                     "title": "变量值 / 信息",
-                    "langauge": "游戏语言: localStorage.getItem(\"language\")",
+                    "langauge": "游戏语言",
                     "debugMode": "调试模式",
                     "note": "注意: 仅适用于静态信息"
                 },
