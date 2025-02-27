@@ -27,7 +27,9 @@
                 "inventory": {
                     "open": "inventory open",
                     "close": "inventory close"
-                }
+                },
+                "setLangaugeNote": "Notes:\nto change console output, please change variable \"language\" s value,\nsuch as \"changeLanguage(\"中文\");\", \n available languages: \"english\" and \"中文\"",
+                "setLanguage": "successful change the language"
             }
         },
         "chinese": {
@@ -48,7 +50,9 @@
                 "inventory": {
                     "open": "打开物品框",
                     "close": "关闭物品框"
-                }
+                },
+                "setLangaugeNote": "帮助:\n如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值,\n比如 \"changeLanguage(\"english\");\", 可用的语言为: \"english\" 和 \"中文\"",
+                "setLanguage": "成功的更改了语言"
             }
         }
     }
