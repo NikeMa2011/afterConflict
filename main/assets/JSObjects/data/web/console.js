@@ -1,9 +1,7 @@
 const text = {
-    "define": {
-        "edition": "0.1.2Beta",
-        "author": "NikeMa2011",
-        "githubLink": "https://github.com/NikeMa2011/RPG"
-    },
+    "edition": "0.1.2Beta",
+    "author": "NikeMa2011",
+    "githubLink": "https://github.com/NikeMa2011/RPG",
     "default": {
         "unSetLanguage": "Since you have not set or open this website before(localStorage.getItem(\"language\"))",
         "setDefault": "please set the language, (now set default: english)"
@@ -21,12 +19,10 @@ const text = {
             "debugMode": "debugMode",
             "note": "Note: only for staric information"
         },
-        "errors": {
-            "warn": "[Warn]: invalid input",
-            "error": "[Error]: unset input",
-            "debugOn": "[Error]: ignored, needs \"debugMode\" on(true)"
-        },
-        "inventory": {
+        "warn": "[Warn]: invalid input",
+        "error": "[Error]: unset input",
+        "debugOn": "[Error]: ignored, needs \"debugMode\" on(true)",
+            "inventory": {
             "open": "inventory open",
             "close": "inventory close"
         },
@@ -45,11 +41,9 @@ const text = {
             "debugMode": "调试模式",
             "note": "注意: 仅适用于静态信息"
         },
-        "errors": {
-            "warn": "[警告]: 未设置输入",
-            "error": "[错误]: 未设置输入",
-            "debugOn": "[错误]: 忽略, 需要 \"debugMode\" 为正(true)"
-        },
+        "warn": "[警告]: 未设置输入",
+        "error": "[错误]: 未设置输入",
+        "debugOn": "[错误]: 忽略, 需要 \"debugMode\" 为正(true)",
         "inventory": {
             "open": "打开物品框",
             "close": "关闭物品框"
