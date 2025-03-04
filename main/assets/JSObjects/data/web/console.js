@@ -1,4 +1,4 @@
-const console = {
+const text = {
     "define": {
         "edition": "0.1.2Beta",
         "author": "NikeMa2011",
@@ -57,6 +57,4 @@ const console = {
         "setlanguageNote": "帮助:\n如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值,\n比如 \"changeLanguage(\"english\");\", 可用的语言为: \"english\" 和 \"中文\"",
         "setLanguage": "成功的更改了语言"
     }
-}
-
-export default console;
+};
