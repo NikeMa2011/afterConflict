@@ -49,11 +49,11 @@ function notice() {
 function welcome() {
     if(language == "english") {
         console.log("Author: NikeMa2011, edition: " + lastestEdition + "\ngithub profile: https://github.com/NikeMa2011");
-        title.innerHTML = ("RPGgame - githubEdition");
+        titleTag.innerHTML = ("RPGgame - githubEdition");
     }
     else if(language == "中文") {
         console.log("作者: NikeMa2011, 版本: " + lastestEdition + "\ngithub链接 : https://github.com/NikeMa2011/RPG");
-        title.innerHTML = ("RPG小游戏 - github版本");
+        titleTag.innerHTML = ("RPG小游戏 - github版本");
     }
 }
 function note() {
