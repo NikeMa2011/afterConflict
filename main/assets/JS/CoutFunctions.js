@@ -1,6 +1,6 @@
 function Cout(text, option) {
     if (text == null) {
-        console.error("the \"cout\" function did not define the output text QWQ")
+        console.error("the \"cout\" function did not define the output text QWQ");
     }
     if (option == null) {
         console.log(text);
@@ -11,6 +11,6 @@ function Cout(text, option) {
     } else if (option == "log") {
         console.log(text);
     } else {
-        console.error("the \"Cout\" function only allow \"warn\", \"error\" and \"log\" QWQ")
+        console.error("the \"Cout\" function only allow \"warn\", \"error\" and \"log\" QWQ");
     }
 }
