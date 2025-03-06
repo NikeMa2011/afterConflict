@@ -43,11 +43,11 @@ language = localStorage.getItem("language");
 if(localStorage.getItem("language") == undefined) {
     notice();
     localStorage.setItem("language", "english");
-    welcome();
 }
 
 
 note();
+welcome();
 
 calcSize();
 calcPosition(window.Event);
