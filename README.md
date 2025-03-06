@@ -9,3 +9,9 @@
 a website little RPG game which is based on canvas tag draw, original JS to write logic and rules, didnt used any third-party code.
 
 > notes: this project has all developed by NikeMa2011, if you find any questions please send to this email address: <huz193@outlook.com>
+
+## 为什么? why?
+
+无聊 (学校内不让打电动, 但鼓励我们弄计算机开发什么之类的)
+
+Im bored bruh (actually in our school we are not allowed play video games, but we been encouraged to develop in computer science)
