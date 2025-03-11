@@ -1,16 +1,16 @@
 // 控制台输出
 function inventoryOpenCout() {
     if(inventoryOpen) {
-        if(language == "english") Cout("inventory open");
-        else if(language == "中文") Cout("打开物品框");
+        if(language == "english") Cout(text.english.inventory.open);
+        else if(language == "中文") Cout(text.chinese.inventory.open);
     } else {
-        if(language == "english") Cout("inventory close");
-        else if(language == "中文") Cout("关闭物品框");
+        if(language == "english") Cout(text.english.inventory.closeclose);
+        else if(language == "中文") Cout(text.chinese.inventory.close);
     }
 }
 function reSizeCout() {
-    if(language == "english") Cout("detect window s size changed:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth);
-    else if(language == "中文") Cout("检测到窗口大小变化:\nwindowHeight: " + windowHeight + " windowWidth: " + windowWidth);
+    if(language == "english") Cout(text.english.reSize + text.english.window.height + windowHeight + text.english.window.width + windowWidth);
+    else if(language == "中文") Cout(text.chinese.reSize + text.chinese.window.height + windowHeight + text.chinese.window.width + windowWidth);
 }
 function invalidInputCout() {
     if(language == "english") Cout("[Warn]: invalid input;");
