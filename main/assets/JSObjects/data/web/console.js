@@ -7,16 +7,16 @@ const text = {
         "setDefault": "please set the language, (now set default: english)"
     },
     "english": {
-        "reSize": "detect window s size changed",
-        "keyPress": "key pressed",
+        "reSize": "detect window s size changed, ",
+        "keyPress": "key pressed: ",
         "window": {
-            "height": "window s height",
-            "width": "window s width"
+            "height": "window s height: ",
+            "width": "window s width: "
         },
         "status": {
             "title": "variable values / information",
-            "language": "language",
-            "debugMode": "debugMode",
+            "language": "language: ",
+            "debugMode": "debugMode: ",
             "note": "Note: only for staric information"
         },
         "warn": "[Warn]: invalid input",
@@ -29,16 +29,16 @@ const text = {
         "setlanguageNote": "Notes:\nto change console output, please change variable \"language\" s value,\nsuch as \"changeLanguage(\"中文\");\", \n available languages: \"english\" and \"中文\"",
     },
     "chinese": {
-        "reSize": "检测到窗口大小变化",
-        "keyPress": "按下的键",
+        "reSize": "检测到窗口大小变化, ",
+        "keyPress": "按下的键: ",
         "window": {
-            "height": "窗口的高度",
-            "width": "窗口的宽度"
+            "height": "窗口的高度: ",
+            "width": "窗口的宽度: "
         },
         "status": {
             "title": "变量值 / 信息",
-            "language": "游戏语言",
-            "debugMode": "调试模式",
+            "language": "游戏语言: ",
+            "debugMode": "调试模式: ",
             "note": "注意: 仅适用于静态信息"
         },
         "warn": "[警告]: 未设置输入",
@@ -49,6 +49,6 @@ const text = {
             "close": "关闭物品框"
         },
         "setlanguageNote": "帮助:\n如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值,\n比如 \"changeLanguage(\"english\");\", 可用的语言为: \"english\" 和 \"中文\"",
-        "setLanguage": "成功的更改了语言"
+        "setLanguage": "成功的更改了语言: "
     }
 };
