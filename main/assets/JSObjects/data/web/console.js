@@ -27,6 +27,7 @@ const text = {
             "close": "inventory close"
         },
         "setlanguageNote": "Notes:\nto change console output, please change variable \"language\" s value,\nsuch as \"changeLanguage(\"中文\");\", \n available languages: \"english\" and \"中文\"",
+        "setLanguage": "successful changed the language: "
     },
     "chinese": {
         "reSize": "检测到窗口大小变化, ",
