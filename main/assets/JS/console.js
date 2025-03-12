@@ -9,8 +9,8 @@ function inventoryOpenCout() {
     }
 }
 function reSizeCout() {
-    if(language == "english") Cout(text.english.reSize + text.english.window.height + windowHeight + text.english.window.width + windowWidth);
-    else if(language == "中文") Cout(text.chinese.reSize + text.chinese.window.height + windowHeight + text.chinese.window.width + windowWidth);
+    if(language == "english") Cout(text.english.reSize + text.english.window.height + windowHeight + ' ' + text.english.window.width + windowWidth);
+    else if(language == "中文") Cout(text.chinese.reSize + text.chinese.window.height + windowHeight + ' ' + text.chinese.window.width + windowWidth);
 }
 function invalidInputCout() {
     if(language == "english") Cout("[Warn]: invalid input;");
