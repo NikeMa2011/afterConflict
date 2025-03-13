@@ -46,16 +46,6 @@ function variableStatus() {
 function notice() {
     Cout("Since you have not set or open this website before(localStorage.getItem(\"language\") is \"" + localStorage.getItem("language") +"\"), please set the language,(now set default: english)");
 }
-function welcome() {
-    if(language == "english") {
-        Cout("Author: NikeMa2011, edition: " + lastestEdition + "\ngithub profile: https://github.com/NikeMa2011");
-        titleTag.innerHTML = ("RPGgame - githubEdition");
-    }
-    else if(language == "中文") {
-        Cout("作者: NikeMa2011, 版本: " + lastestEdition + "\ngithub链接 : https://github.com/NikeMa2011/RPG");
-        titleTag.innerHTML = ("RPG小游戏 - github版本");
-    }
-}
 function note() {
     if(language == "english")  Cout("Notes:\nto change console output, please change variable \"language\" s value,\nsuch as \"changeLanguage(\"中文\");\", edition(" + lastestEdition + "), \n available languages: \"english\" and \"中文\";");
     else if(language == "中文") Cout("帮助:\n如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值,\n比如 \"changeLanguage(\"english\");\", 版本(" + lastestEdition + "), 可用的语言为: \"english\" 和 \"中文\";");
