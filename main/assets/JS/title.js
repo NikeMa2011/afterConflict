@@ -1,4 +1,4 @@
-function welcome() {
+function websiteTitleChange() {
     if(language == "english") {
         Cout("Author: NikeMa2011, edition: " + lastestEdition + "\ngithub profile: https://github.com/NikeMa2011");
         titleTag.innerHTML = ("RPGgame - githubEdition");

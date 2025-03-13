@@ -47,7 +47,7 @@ if(localStorage.getItem("language") == undefined) {
 
 
 note();
-welcome();
+websiteTitleChange();
 
 calcSize();
 calcPosition(window.Event);
