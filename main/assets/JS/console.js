@@ -30,15 +30,15 @@ function pressKeyCout(key) {
 }
 function variableStatus() {
     if(debugMode) {
-        if(language == "english") console.group("variable values / information:");
-        else if(language == "中文") console.group("变量值 / 信息:");
+        if(language == "english") console.group(text.english.status.title);
+        else if(language == "中文") console.group(text.chinese.status.title);
 
-        Cout("localStorage.getItem(\"language\") = " + localStorage.getItem("language"));
-        Cout(";debugMode: " + debugMode + "\n");
+        Cout(text.english.status.language + localStorage.getItem("language"));
+        Cout(text.english.status.debugMode + debugMode + "\n");
 
         console.groupEnd();
-        if(language == "english") Cout("Note: only for staric information;");
-        else if(language == "中文") Cout("注意: 仅适用于静态信息");
+        if(language == "english") Cout(text.english.status.note);
+        else if(language == "中文") Cout(text.chinese.status.note);
     } else {
         needDebugOnCout();
     }
