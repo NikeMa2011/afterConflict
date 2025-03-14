@@ -13,16 +13,16 @@ function reSizeCout() {
     else if(language == "中文") Cout(text.chinese.reSize + text.chinese.window.height + windowHeight + ' ' + text.chinese.window.width + windowWidth);
 }
 function invalidInputCout() {
-    if(language == "english") Cout("[Warn]: invalid input;");
-    else if(language == "中文") Cout("[警告]: 未设置输入");
+    if(language == "english") Cout(text.english.warn);
+    else if(language == "中文") Cout(text.chinese.warn);
 }
 function unSetInputCout() {
-    if(language == "english") Cout("[Error]: unset input;");
-    else if(language == "中文") Cout("[错误]: 未设置输入;");
+    if(language == "english") Cout(text.english.error);
+    else if(language == "中文") Cout(text.chinese.error);
 }
 function needDebugOnCout() {
-    if(language == "english") Cout("[Error]: ignored, needs \"debugMode\" on(true);");
-    else if(language == "中文") Cout("[错误]: 忽略, 需要 \"debugMode\" 为正(true);");
+    if(language == "english") Cout(text.english.debugOn);
+    else if(language == "中文") Cout(text.chinese.debugOn);
 }
 function pressKeyCout(key) {
     if(language == "english") Cout("key press: " + key);
