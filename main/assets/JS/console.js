@@ -5,7 +5,7 @@ function inventoryOpenCout() {
         else if(language == "中文") Cout(text.chinese.inventory.open);
     } else {
         if(language == "english") Cout(text.english.inventory.closeclose);
-        else if(language == "中文") Cout(text.chinese.inventory.close);
+        else if(language == "中文") Cout(text.chinese.inventory.close); n8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 }
 function reSizeCout() {
@@ -21,8 +21,8 @@ function unSetInputCout() {
     else if(language == "中文") Cout(text.chinese.error);
 }
 function needDebugOnCout() {
-    if(language == "english") Cout(text.english.debugOn);
-    else if(language == "中文") Cout(text.chinese.debugOn);
+    if(language == "english") Cout(text.english.needDebugModeOn);
+    else if(language == "中文") Cout(text.chinese.needDebugModeOn);
 }
 function pressKeyCout(key) {
     if(language == "english") Cout("key press: " + key);

@@ -21,7 +21,7 @@ const text = {
         },
         "warn": "[Warn]: invalid input",
         "error": "[Error]: unset input",
-        "debugOn": "[Error]: ignored, needs \"debugMode\" on(true)",
+        "needDebugModeOn": "[Error]: ignored, needs \"debugMode\" on(true)",
             "inventory": {
             "open": "inventory open",
             "close": "inventory close"
@@ -44,7 +44,7 @@ const text = {
         },
         "warn": "[警告]: 未设置输入",
         "error": "[错误]: 未设置输入",
-        "debugOn": "[错误]: 忽略, 需要 \"debugMode\" 为正(true)",
+        "needDebugModeOn": "[错误]: 忽略, 需要 \"debugMode\" 为正(true)",
         "inventory": {
             "open": "打开物品框",
             "close": "关闭物品框"
