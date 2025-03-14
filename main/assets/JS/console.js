@@ -33,8 +33,13 @@ function variableStatus() {
         if(language == "english") console.group(text.english.status.title);
         else if(language == "中文") console.group(text.chinese.status.title);
 
-        Cout(text.english.status.language + localStorage.getItem("language"));
-        Cout(text.english.status.debugMode + debugMode + "\n");
+        if (language == "english") {
+            Cout(text.english.status.language + localStorage.getItem("language"));
+            Cout(text.english.status.debugMode + debugMode + "\n");
+        } else if (language == "中文") {
+            Cout(text.chinese.status.language + localStorage.getItem("language"));
+            Cout(text.chinese.status.debugMode + debugMode + "\n");
+        }
 
         console.groupEnd();
         if(language == "english") Cout(text.english.status.note);
