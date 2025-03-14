@@ -22,7 +22,7 @@ const text = {
         "warn": "[Warn]: invalid input",
         "error": "[Error]: unset input",
         "needDebugModeOn": "[Error]: ignored, needs \"debugMode\" on(true)",
-            "inventory": {
+        "inventory": {
             "open": "inventory open",
             "close": "inventory close"
         },
