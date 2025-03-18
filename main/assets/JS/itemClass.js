@@ -1,14 +1,11 @@
-class default {
-    constructor(ID, name, discription) {
+class defalutClass {
+    constructor(ID, name, discription, damage) {
         this.ID = ID;
         this.name = name;
         this.discription = discription;
     }
 }
-class else extends default {
-    
-}
-class hotWeapons extends defalut {
+class hotWeapons extends defalutClass {
     constructor(reloadSpeed, fireSpeed, maxiumAmmo, ammo, weight, damage, penetrate) {
         super();
         this.reloadSpeed = reloadSpeed;
