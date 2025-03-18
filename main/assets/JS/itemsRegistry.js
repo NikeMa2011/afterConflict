@@ -1,1 +1,1 @@
-const glock_18 = new weapons("weapon_pistols_glock_18", "glock_18",);
+const glock_18 = new hotWeapons("weapon_pistols_glock_18", "glock_18",);

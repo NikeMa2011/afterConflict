@@ -5,7 +5,7 @@ class defalut {
         this.discription = discription;
     }
 }
-class weapons extends defalut {
+class hotWeapons extends defalut {
     constructor(reloadSpeed, fireSpeed, maxiumAmmo, ammo, weight, damage, penetrate) {
         super();
         this.reloadSpeed = reloadSpeed;
