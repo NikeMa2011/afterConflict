@@ -1,5 +1,5 @@
 class defalutClass {
-    constructor(ID, name, discription, damage) {
+    constructor(ID, name, discription, damage, weight) {
         this.ID = ID;
         this.name = name;
         this.discription = discription;
@@ -7,19 +7,17 @@ class defalutClass {
     }
 }
 class coolWeapons extends defalutClass {
-    constructor(attackSpeed, weight) {
+    constructor(attackSpeed) {
         this.attackSpeed = attackSpeed;
-        this.weight = weight;
     }
 }
 class hotWeapons extends defalutClass {
-    constructor(reloadSpeed, fireSpeed, maxiumAmmo, ammo, weight, penetrate) {
+    constructor(reloadSpeed, fireSpeed, maxiumAmmo, ammo, penetrate) {
         super();
         this.reloadSpeed = reloadSpeed;
         this.fireSpeed = fireSpeed;
         this.maxiumAmmo = maxiumAmmo;
         this.ammo = ammo;
-        this.weight = weight;
         this.penetrate = penetrate;
     }
 }
