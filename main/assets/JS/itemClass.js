@@ -4,6 +4,7 @@ class defalutClass {
         this.name = name;
         this.discription = discription;
         this.damage = damage;
+        this.weight = weight
     }
 }
 class coolWeapons extends defalutClass {
