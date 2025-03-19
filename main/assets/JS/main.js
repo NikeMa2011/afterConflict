@@ -28,15 +28,6 @@ let energy = 30, maxiumEnergy = 30;
 let weight = 0, maxiumWeight = 30;
 let moveDistance, maxiumMoveSpeed = 10;
 
-// 函数
-function inventory() {
-    if (!inventoryOpen) {
-        inventoryOpen = true;
-    } else if (inventoryOpen) {
-        inventoryOpen = false;
-    }
-    if (debugMode) inventoryOpenCout();
-}
 // 初始化
 language = localStorage.getItem("language");
 
