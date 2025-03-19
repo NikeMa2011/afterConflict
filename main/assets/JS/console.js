@@ -24,9 +24,9 @@ function needDebugOnCout() {
     if (language == "english") Cout(text.english.needDebugModeOn);
     else if (language == "中文") Cout(text.chinese.needDebugModeOn);
 }
-function pressKeyCout(key) {
-    if (language == "english") Cout(text.english.keyPress + key);
-    else if (language == "中文") Cout(text.chinese.keyPress + key);
+function pressKeyCout(keyPress) {
+    if (language == "english") Cout(text.english.keyPress + keyPress);
+    else if (language == "中文") Cout(text.chinese.keyPress + keyPress);
 }
 function variableStatus() {
     if (debugMode) {
