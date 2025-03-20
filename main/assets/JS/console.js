@@ -52,8 +52,8 @@ function notice() {
     Cout(text.default.unSetLanguage + localStorage.getItem("language") + text.default.setDefault);
 }
 function note() {
-    if (language == "english") Cout("Notes:\nto change console output, please change variable \"language\" s value,\nsuch as \"changeLanguage(\"中文\");\", edition(" + lastestEdition + "), \n available languages: \"english\" and \"中文\";");
-    else if (language == "中文") Cout("帮助:\n如果你要改变控制台输出的语言的话, 请改变 \"language\" 的值,\n比如 \"changeLanguage(\"english\");\", 版本(" + lastestEdition + "), 可用的语言为: \"english\" 和 \"中文\";");
+    if (language == "english") Cout(text.english.setlanguageNote);
+    else if (language == "中文") Cout(text.chinese.setlanguageNote);
 }
 function changeLanguage(option) {
     language = option;
