@@ -36,7 +36,7 @@ if (localStorage.getItem("language") == undefined) {
     localStorage.setItem("language", "english");
 }
 
-
+basicInformation();
 note();
 websiteTitleChange();
 
