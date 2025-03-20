@@ -49,7 +49,7 @@ function variableStatus() {
     }
 }
 function notice() {
-    Cout("Since you have not set or open this website before(localStorage.getItem(\"language\") is \"" + localStorage.getItem("language") + "\"), please set the language,(now set default: english)");
+    Cout(text.default.unSetLanguage + localStorage.getItem("language") + text.default.setDefault);
 }
 function note() {
     if (language == "english") Cout("Notes:\nto change console output, please change variable \"language\" s value,\nsuch as \"changeLanguage(\"中文\");\", edition(" + lastestEdition + "), \n available languages: \"english\" and \"中文\";");
