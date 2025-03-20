@@ -5,7 +5,7 @@ function inventoryOpenCout() {
         else if (language == "中文") Cout(text.chinese.inventory.open);
     } else {
         if (language == "english") Cout(text.english.inventory.closeclose);
-        else if (language == "中文") Cout(text.chinese.inventory.close); n8
+        else if (language == "中文") Cout(text.chinese.inventory.close);
     }
 }
 function reSizeCout() {
