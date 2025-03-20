@@ -58,6 +58,6 @@ function note() {
 function changeLanguage(option) {
     language = option;
     localStorage.setItem("language", option);
-    if (language == "english") Cout("successful change the language, language: " + language);
-    else if (language == "中文") Cout("成功的更改了语言: " + language);
+    if (language == "english") Cout(text.english.setLanguage + language);
+    else if (language == "中文") Cout(text.chinese.setLanguage + language);
 }
