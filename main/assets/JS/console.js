@@ -61,3 +61,7 @@ function changeLanguage(option) {
     if (language == "english") Cout(text.english.setLanguage + language);
     else if (language == "中文") Cout(text.chinese.setLanguage + language);
 }
+function basicInformation() {
+    if (language == "english") Cout("Author: " + text.author + " edition: " + lastestEdition + "\ngithub profile: " + text.githubLink);
+    else if (language == "中文") Cout("作者: " + text.author + " 版本: " + lastestEdition + "\ngithub链接 : " + text.githubLink);
+}
