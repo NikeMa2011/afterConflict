@@ -37,7 +37,6 @@ window.onkeydown = (event) => {
     }
 }
 
-
 // 渲染
 function drawPlayersPlatform() {
     playersPlatformX = positionX + offSetX - (playersPlatformWifth / 2);
