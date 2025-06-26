@@ -19,3 +19,5 @@ A website little RPG game which is based on canvas tag draw, original JS to writ
 > 顺带一提, 战雷, 启动!
 
 Im bored bruh (actually in our school we are not allowed play video games, but we been encouraged to develop in computer science)
+
+> 声明: 游戏目前处于停止开发的状态...qwq
