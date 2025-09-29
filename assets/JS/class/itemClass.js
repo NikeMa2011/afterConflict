@@ -1,8 +1,10 @@
 class people {
-    constructor(x, y, z, IDcode, health, maximumHealth, weight, maximumWeight, dead) {
+    constructor(x, y, z, height, width, IDcode, health, maximumHealth, weight, maximumWeight, dead) {
         this.x = x;
         this.y = y;
         this.z = z;
+        this.height = height;
+        this.width = width;
         this.IDcode = IDcode;
         this.health = health;
         this.maximumHealth = maximumHealth;
