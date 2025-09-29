@@ -1,7 +1,7 @@
 setCanvasHeightWidth();
 calcFramePerSecondAndSetMilliSecond();
 
-player = new people(0, 0, 0, 0, null, 460, null, 700000, null);
-player.setUp();
+player = new people(0, 0, 0, 0, null, null, null, null, null);
+player.setUp("standard");
 
 runTick();

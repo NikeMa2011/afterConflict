@@ -3,13 +3,18 @@ class people {
         this.x = x;
         this.y = y;
         this.z = z;
+
         this.height = height;
         this.width = width;
+
         this.IDcode = IDcode;
+
         this.health = health;
         this.maximumHealth = maximumHealth;
+
         this.weight = weight;
         this.maximumWeight = maximumWeight;
+
         this.dead = dead;
     }
 
@@ -24,9 +29,17 @@ class people {
         }
     }
 
-    setUp() {
-        this.health = this.maximumHealth;
-        this.weight = this.maximumWeight;
-        this.dead = false;
+    setUp(type) {
+        if (type == "standard") {
+            this.maximumHealth = 460;
+            this.maximumWeight = 700000;
+
+            this.health = this.maximumHealth;
+            this.weight = this.maximumWeight;
+
+            this.dead = false;
+        } else {
+            console.error("setUp value undefined");
+        }
     }
 }
