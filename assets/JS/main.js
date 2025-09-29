@@ -7,3 +7,8 @@ let framePerSecond = 60;
 let framePerSecondInMillisecond;
 
 let player;
+
+let positionX, positionY;
+let positionXOffset, positionYOffset;
+
+let randRatio;

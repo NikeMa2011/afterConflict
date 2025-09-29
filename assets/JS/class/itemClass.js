@@ -1,11 +1,11 @@
 class people {
-    constructor(x, y, z, height, width, IDcode, health, maximumHealth, weight, maximumWeight, dead) {
+    constructor(x, y, z, width, height, IDcode, health, maximumHealth, weight, maximumWeight, dead) {
         this.x = x;
         this.y = y;
         this.z = z;
 
-        this.height = height;
         this.width = width;
+        this.height = height;
 
         this.IDcode = IDcode;
 
@@ -33,6 +33,9 @@ class people {
         if (type == "standard") {
             this.maximumHealth = 460;
             this.maximumWeight = 700000;
+
+            this.width = 50;
+            this.height = 100;
 
             this.health = this.maximumHealth;
             this.weight = this.maximumWeight;
