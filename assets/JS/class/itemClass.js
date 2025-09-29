@@ -12,19 +12,19 @@ class people {
     }
 
     hurt(damage) {
-        let healthAfterHurt = health - damage;
+        let healthAfterHurt = this.health - damage;
 
         if (healthAfterHurt > 0) {
             return healthAfterHurt;
         } else {
-            health = 0;
-            dead = true;
+            this.health = 0;
+            this.dead = true;
         }
     }
 
     setUp() {
-        health = maximumHealth;
-        weight = maximumWeight;
-        dead = false;
+        this.health = this.maximumHealth;
+        this.weight = this.maximumWeight;
+        this.dead = false;
     }
 }
