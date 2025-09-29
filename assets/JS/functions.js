@@ -6,15 +6,13 @@ function setCanvasHeightWidth() {
     canvas.height = windowHeight;
 }
 
-window.onresize = setCanvasHeightWidth;
-
 function calcFramePerSecondAndSetMilliSecond() {
     framePerSecondInMillisecond = Math.floor(1000 / framePerSecond);
 }
 
 function drowBackground() {
     ctx.fillStyle = "#000000";
-
+    
     ctx.fillRect(0, 0, windowWidth, windowHeight);
 }
 
@@ -24,8 +22,10 @@ function rend() {
 
 function runTick() {
     rend();
-
+    
     setTimeout(() => {
         runTick();
     }, framePerSecondInMillisecond);
 }
+
+window.onresize = setCanvasHeightWidth;

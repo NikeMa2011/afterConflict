@@ -1,0 +1,4 @@
+setCanvasHeightWidth();
+calcFramePerSecondAndSetMilliSecond();
+
+runTick();
