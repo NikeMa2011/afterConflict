@@ -30,12 +30,6 @@ function calcFramePerSecondAndSetMilliSecond() {
     framePerSecondInMillisecond = Math.floor(1000 / framePerSecond);
 }
 
-function drowBackground() {
-    ctx.fillStyle = "#202020";
-
-    ctx.fillRect(0, 0, windowWidth, windowHeight);
-}
-
 function runTick() {
     rend();
 

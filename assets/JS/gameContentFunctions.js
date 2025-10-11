@@ -1,3 +1,9 @@
+function drowBackground() {
+    ctx.fillStyle = "#202020";
+
+    ctx.fillRect(0, 0, windowWidth, windowHeight);
+}
+
 function drowPlayer() {
     ctx.fillStyle = "#ffffff";
 
