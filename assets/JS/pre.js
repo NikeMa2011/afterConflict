@@ -2,6 +2,11 @@ setCanvasHeightWidth();
 calcFramePerSecondAndSetMilliSecond();
 
 player = new people(0, 0, 0, 0);
-player.setUp("standard");
+player.setup("standard");
+
+crosshair = new crosshairObject();
+crosshair.setup("normal");
+
+setRendOffsetMiddle();
 
 runTick();

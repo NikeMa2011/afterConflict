@@ -29,7 +29,7 @@ class people {
         }
     }
 
-    setUp(type) {
+    setup(type) {
         if (type == "standard") {
             this.maximumHealth = 460;
             this.maximumWeight = 700000;
@@ -41,8 +41,24 @@ class people {
             this.weight = this.maximumWeight;
 
             this.dead = false;
-        } else {
-            console.error("setUp value undefined");
+        }
+    }
+}
+
+class crosshairObject {
+    constructor(size, x, y, thickness, color) {
+        this.size = size;
+        this.x = x;
+        this.y = y;
+        this,thickness = thickness;
+        this.color = color;
+    }
+
+    setup(type) {
+        if (type == "normal") {
+            this.size = 20;
+            this.thickness = 2;
+            this.color = "#ffffff";
         }
     }
 }
