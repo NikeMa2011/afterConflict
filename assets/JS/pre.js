@@ -9,4 +9,6 @@ crosshair.setup("normal");
 
 setRendOffsetMiddle();
 
+ctx.font = 20 * rendRatio + "px sans-senif";
+
 runTick();

@@ -58,4 +58,6 @@ function rend() {
 
     drowPlayer();
     drowCrosshair();
+
+    drowUI();
 }

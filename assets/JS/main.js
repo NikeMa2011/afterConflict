@@ -14,4 +14,6 @@ let rendTargetX = 0, rendTargetY = 0;
 
 mobList = [];
 
-let rendRatio;
+let rendRatio = 1;
+
+let keySet = {};
