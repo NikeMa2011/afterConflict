@@ -48,10 +48,10 @@ window.onresize = setCanvasHeightWidth;
 
 window.onmousemove = (event) => {
     getCrosshairPosition(event);
-    setRendXY();
 }
 
 function rend() {
+    setRendXY();
     setRendOffset();
 
     drowBackground();

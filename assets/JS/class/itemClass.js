@@ -56,6 +56,8 @@ class crosshairObject {
 
     setup(type) {
         if (type == "normal") {
+            this.x = Math.floor(windowWidth / 2);;
+            this.y = Math.floor(windowHeight / 2);
             this.size = 20;
             this.thickness = 2;
             this.color = "#ffffff";
