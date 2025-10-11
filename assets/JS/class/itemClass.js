@@ -1,5 +1,5 @@
 class people {
-    constructor(x, y, z, width, height, IDcode, speed, health, maximumHealth, weight, maximumWeight, dead) {
+    constructor(x, y, z, width, height, IDcode, speed, health, maximumHealth, fullHealth, weight, maximumWeight, dead, equiptedWeapon) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -13,11 +13,14 @@ class people {
 
         this.health = health;
         this.maximumHealth = maximumHealth;
+        this.fullHealth = fullHealth;
 
         this.weight = weight;
         this.maximumWeight = maximumWeight;
 
         this.dead = dead;
+
+        this.equiptedWeapon = equiptedWeapon;
     }
 
     hurt(damage) {
@@ -36,6 +39,8 @@ class people {
             this.speed = 10;
 
             this.maximumHealth = 460;
+            this.fullHealth = this.maximumHealth;
+
             this.maximumWeight = 700000;
 
             this.width = 50;
@@ -54,7 +59,7 @@ class crosshairObject {
         this.size = size;
         this.x = x;
         this.y = y;
-        this,thickness = thickness;
+        this, thickness = thickness;
         this.color = color;
     }
 
@@ -65,6 +70,64 @@ class crosshairObject {
             this.size = 20;
             this.thickness = 2;
             this.color = "#ffffff";
+        }
+    }
+}
+
+class hotweapon {
+    constructor(id, name, description, type, weight, damage, armorPiercing, ammo, maximumAmmo, ammoType, ammoTypeUsed, magazineType, magazineTypeUsed, durability, maximumDurability, fullDurability, model, equipted, failure, broken) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+
+        this.type = type;
+
+        this.weight = weight;
+
+        this.damage = damage;
+        this.armorPiercing = armorPiercing;
+
+        this.ammo = ammo;
+        this.maximumAmmo = maximumAmmo;
+        this.ammoType = ammoType;
+        this.ammoTypeUsed = ammoTypeUsed;
+
+        this.magazineType = magazineType;
+        this.magazineTypeUsed = magazineTypeUsed;
+
+        this.durability = durability;
+        this.maximumDurability = maximumDurability;
+        this.fullDurability = fullDurability;
+
+        this.model = model;
+
+        this.equipted = equipted;
+
+        this.failure = failure;
+        this.broken = broken;
+    }
+
+    fire() {
+        if (ammo > 0) {
+            if (this.ammoTypeUsed == this.ammoType) {
+                this.ammo --;
+
+                // 子弹发射
+            } else {
+                this.failure = true;
+
+                return this.ammoTypeUsed;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    reload(magazineTypeInput) {
+        if (this.magazineType == magazineTypeInput) {
+            this.magazineTypeUsed = this.magazineTypeUsed;
+        } else {
+            return magazineTypeInput;
         }
     }
 }

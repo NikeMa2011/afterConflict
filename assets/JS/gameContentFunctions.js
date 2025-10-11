@@ -20,7 +20,7 @@ function drowCrosshair() {
 function drowPlayerInformation() {
     ctx.fillStyle = "#ffffff";
 
-    ctx.fillText("玩家X坐标: " + Math.floor(player.x / 100) + " 玩家Y坐标" + Math.floor(player.y / 100), 10, 30);
+    ctx.fillText("坐标 x: " + Math.floor(player.x / 100) + " y: " + Math.floor(player.y / 100), 10, 30);
 }
 
 function drowUI() {
