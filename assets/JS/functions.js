@@ -21,11 +21,6 @@ function setCanvasHeightWidth() {
     canvas.height = windowHeight;
 }
 
-function setRendOffsetMiddle() {
-    rendXOffset = windowWidth / 2;
-    rendYOffset = windowHeight / 2;
-}
-
 function calcFramePerSecondAndSetMilliSecond() {
     framePerSecondInMillisecond = Math.floor(1000 / framePerSecond);
 }
@@ -48,10 +43,6 @@ function rend() {
     setRendXY();
     setRendOffset();
 
-    drowBackground();
-
-    drowPlayer();
-    drowCrosshair();
 
     drowUI();
 }

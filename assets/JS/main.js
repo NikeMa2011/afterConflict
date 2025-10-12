@@ -6,13 +6,22 @@ let windowHeight, windowWidth;
 let framePerSecond = 60;
 let framePerSecondInMillisecond;
 
-let player, crosshair;
+let crosshair;
+
+let playerViewpointX, playerViewpointY;
 
 let rendOffsetSpeed = 0.2;
 let rendXOffset = 0, rendYOffset = 0;
 let rendTargetX = 0, rendTargetY = 0;
 
-mobList = [];
+let gameBuildingList = [];
+let rendBuildingList = [];
+
+let gameMobList = [];
+let rendMobList = [];
+
+let gameItemList = [];
+let rendItemList = [];
 
 let rendRatio = 1;
 
