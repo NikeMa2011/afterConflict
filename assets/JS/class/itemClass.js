@@ -51,19 +51,6 @@ class crosshairObject {
 
         this.color = color;
     }
-
-    setup(type) {
-        if (type == "normal") {
-            this.size = 20;
-
-            this.x = Math.floor(windowWidth / 2);;
-            this.y = Math.floor(windowHeight / 2);
-
-            this.thickness = 2;
-
-            this.color = "#ffffff";
-        }
-    }
 }
 
 class hotweapon {
@@ -133,18 +120,5 @@ class building{
         this.id = id;
 
         this.color = color;
-    }
-
-    setup(type) {
-        if (type == "test_platform") {
-            this.type = "floor";
-
-            this.height = 800;
-            this.width = 800;
-
-            this.id = type;
-
-            this.color = "#c4c4c4"
-        }
     }
 }

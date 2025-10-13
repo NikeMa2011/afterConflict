@@ -1,6 +1,6 @@
 function loadObjects() {
     // 建筑
-    let playerPlatform = new building.setup("test_platform");
+    let playerPlatform = new building("floor", 3000, 3000, "testPlatform", "#919191");
 
     // 人物
     let player = new people(0, 0, 0, 50, 100, "player", 10, null, 460, 460, 0, 700000, undefined, undefined, undefined, undefined, false, null);
