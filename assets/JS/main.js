@@ -6,7 +6,7 @@ let windowHeight, windowWidth;
 let framePerSecond = 60;
 let framePerSecondInMillisecond;
 
-let crosshair;
+let playerName = "player";
 
 let playerViewpointX, playerViewpointY;
 
@@ -17,8 +17,8 @@ let rendTargetX = 0, rendTargetY = 0;
 let gameBuildingList = [];
 let rendBuildingList = [];
 
-let gameMobList = [];
-let rendMobList = [];
+let gameEntityList = [];
+let rendEntityList = [];
 
 let gameItemList = [];
 let rendItemList = [];
