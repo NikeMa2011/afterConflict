@@ -1,3 +1,5 @@
+title.innerHTML = "After Conflict - Github version" + gameVersion;
+
 setCanvasHeightWidth();
 calcFramePerSecondAndSetMilliSecond();
 

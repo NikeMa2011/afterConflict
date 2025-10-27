@@ -1,5 +1,19 @@
-class people {
-    constructor(x, y, z, width, height, id, name, objectType, color, speed, health, maximumHealth, fullHealth, weight, maximumWeight, armor, outfit, gear, backpacking, dead, equiptedItem) {
+class gameObjectMoudle {
+    constructor(id, objectType) {
+
+    }
+
+    setID() {
+        if (this.type = "entity") {
+
+        }
+    }
+}
+
+class people extends gameObjectMoudle {
+    constructor(x, y, z, width, height, name, color, speed, health, maximumHealth, fullHealth, weight, maximumWeight, armor, outfit, gear, backpacking, dead, equiptedItem) {
+        super();
+
         this.objectType = "entity";
     }
 
@@ -25,23 +39,18 @@ class people {
     }
 }
 
-class drops {
-    constructor(x, y, z, id, name, model, diraction) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+class drops extends gameObjectMoudle {
+    constructor(x, y, z, name, model, diraction) {
+        super();
 
-        this.id = id;
-        this.name = name;
-
-        this.model = model;
-
-        this.diraction = diraction
+        this.objectType = "entity";
     }
 }
 
-class item {
-    constructor(id, name, shortspell, description, objectType, type, weight, width, height, depth, x, y, z, model, equipted, failure, broken) {
+class item extends gameObjectMoudle{
+    constructor(name, shortspell, description, type, weight, width, height, depth, x, y, z, model, equipted, failure, broken) {
+        super();
+
         this.objectType = "entity";
     }
 }
@@ -119,8 +128,10 @@ class hotweapon extends item {
     }
 }
 
-class building {
-    constructor(type, objectType, height, width, id, color) {
+class building extends gameObjectMoudle {
+    constructor(type, height, width, color) {
+        super();
+
         this.objectType = "building";
     }
 }

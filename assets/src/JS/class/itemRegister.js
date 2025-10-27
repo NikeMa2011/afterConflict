@@ -5,7 +5,6 @@ function loadObjects() {
     building_playerPlatform.height = 4000;
     building_playerPlatform.width = 4000;
     building_playerPlatform.id = "testPlatform";
-    building_playerPlatform.color = "#c2c2c2";
 
     // 人物
     people_player = new people();
@@ -13,7 +12,6 @@ function loadObjects() {
     people_player.height = 100;
     people_player.id = "player";
     people_player.name = playerName;
-    people_player.color = "#ffffff";
     people_player.speed = 10;
     people_player.health = 460;
     people_player.maximumHealth = people_player.health;
@@ -88,11 +86,19 @@ const level = {
             people_player.x = 0;
             people_player.y = 0;
             people_player.z = 0;
-            
+            people_player.color = "#c0c0c0";
+
+            item_ammo_9x19mm.number = item_ammo_9x19mm.maximumNumber;
+
+            item_magazine_pistol_glock19.ammoUsed = item_ammo_9x19mm;
+
+            weapon_pistol_glock19.magazineUsed = item_magazine_pistol_glock19;
+
             people_player.equipt(weapon_pistol_glock19);
-            
-            building_playerPlatform.x = -200;
-            building_playerPlatform.y = -200;
+
+            building_playerPlatform.x = 0;
+            building_playerPlatform.y = 0;
+            building_playerPlatform.color = "#383838";
 
             addObjectInList(building_playerPlatform);
             addObjectInList(people_player);
