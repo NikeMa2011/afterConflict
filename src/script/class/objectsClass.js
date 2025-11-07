@@ -1,11 +1,21 @@
 class gameObjectMoudle {
-    constructor(id, objectType) {
+    constructor(objectIdstring, objectIDcode, objectType) {
 
     }
 
-    setID() {
-        if (this.type = "entity") {
+    addToObjectList() {
+        if (this.objectIDcode == "player") {
+            gameObjectList["player"] = this;
 
+            return;
+        }
+
+        for (let i = 0; i < gameObjectList.length; i++) {
+            if (gameObjectList[i] == null) {
+                gameObjectList[i] = this;
+
+                return;
+            }
         }
     }
 }
@@ -128,10 +138,27 @@ class hotweapon extends item {
     }
 }
 
-class building extends gameObjectMoudle {
+class scene extends gameObjectMoudle {
     constructor(type, height, width, color) {
         super();
 
-        this.objectType = "building";
+        this.objectType = "scene";
     }
+}
+
+class text extends scene {
+    constructor(string) {
+        super();
+    }
+}
+
+function setCrosshair() {
+    this.size = 20;
+
+    this.x = Math.floor(windowSize.width / 2);
+    this.y = Math.floor(windowSize.height / 2);
+
+    this.thickness = 2;
+
+    this.color = "#ffffff";
 }

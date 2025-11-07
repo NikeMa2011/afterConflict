@@ -3,28 +3,39 @@ const ctx = canvas.getContext("2d");
 
 const title = document.querySelector("title");
 
-let gameVersion = "beta v0.2.0";
+let gameVersion = "beta v0.2.0.1";
 
-let windowHeight, windowWidth;
+let windowSize = {
+    width : 0,
+    height : 0
+};
 
 let framePerSecond = 60;
 let framePerSecondInMillisecond;
 
 let playerName = "player";
 
-let playerViewpointX, playerViewpointY;
+let playerViewpoint = {
+    x : 0,
+    y : 0
+};
 
-let rendOffsetSpeed = 0.2;
-let rendXOffset = 0, rendYOffset = 0;
-let rendTargetX = 0, rendTargetY = 0;
+let rendOffset = {
+    x : 0,
+    y : 0,
+    speed : 0.2
+};
+let rendTarget = {
+    x : 0,
+    y : 0
+}
 
 let gameObjectList = {};
 
-let gameBuildingList = {};
-let rendBuildingList = {};
-
-let gameEntityList = {};
+let rendSceneList = {};
 let rendEntityList = {};
+
+let rendObjectList = {};
 
 let rendRatio = 1;
 
